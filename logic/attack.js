@@ -12,6 +12,9 @@ export default function attack(p1, p2, location){
     else if(p1.rank < p2.rank){
         location=p2
     }
-    else {location = 0}
+    else {
+        location = 0
+    }
     return location
 }
+console.log(attack({rank:12},{rank:12},0.6));
