@@ -11,4 +11,3 @@ for (let i = 0; i != boardSize; i++) {
 }
 return board
 }
-// console.log(board(3));
