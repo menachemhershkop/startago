@@ -12,5 +12,6 @@ export default function attack(p1, p2, location){
     else if(p1.rank < p2.rank){
         location=p2
     }
+    else {location = 0}
     return location
 }
