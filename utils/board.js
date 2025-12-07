@@ -1,4 +1,6 @@
-const boardSize = 10;
+export default function board(num){
+
+const boardSize = num;
 const board = [];
 
 for (let i = 0; i != boardSize; i++) {
@@ -7,5 +9,5 @@ for (let i = 0; i != boardSize; i++) {
 		board[i].push(0);
 	}
 }
-
-console.log(board);
+return board
+}
