@@ -11,3 +11,7 @@ for (let i = 0; i != boardSize; i++) {
 }
 return board
 }
+
+let a = board(10)
+a[3][2]= 9
+console.table(a);
