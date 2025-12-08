@@ -6,4 +6,5 @@ function craeteSoldier(){
     }soldiers.push({name:"flag" ,rank:null})
     return soldiers
 }
-console.log(craeteSoldier());
+
+console.log(craeteSoldier())
