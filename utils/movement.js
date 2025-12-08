@@ -4,25 +4,23 @@ export default function movement(location ){
     let option = ""
     if (location[1]===9){
         if (location[0] === 0 ){option = readlineSync.question('down:1 ,left:2')}
-        if (location[0]===9){option = readlineSync.question('left: ,up:2')}
+        if (location[0]===9){option = readlineSync.question('left:1 ,up:2')}
         else{let option = readlineSync.question('down:1 ,left:2 ,up:3')}
     }
 
     if (location[0] === 9){
-        if (location[1]=== 0 ){option = readlineSync.question('left: ,up:2')}
+        if (location[1]=== 0 ){option = readlineSync.keyInSelect(["right", "up"], "select step...")}
             else {let option = readlineSync.question('right:1,left:2 ,up:3')}
 
         }
-    if (location[1]===0){
-        if (location[0]===0){option = readlineSync.question('right:1 ,down:2')}
-        else{option = readlineSync.question('right:1 ,down:2  ,up: 3')}
+    if (location[0]===0){
+        if (location[1]===0){option = readlineSync.question('right:1 ,down:2')}
+        else{option = readlineSync.question('left:1  ,down:2 ,up: 3')}
     }
     else{option = readlineSync.question('right:1 ,left:2 ,up:3 ,down:4')}
 
     return  option
     }
     
-
-
-console.log(movement([0 ,0]));
+console.log(movement([3,9]));
 

@@ -1,3 +1,5 @@
+import craeteSoldierC from "./soliedr.js";
+import craeteSoldierX from "./soliedr.js";
 export default function board(num){
 
 const boardSize = num;
@@ -12,14 +14,19 @@ for (let i = 0; i != boardSize; i++) {
 return board
 }
 
-let a = board(10)
-a[7][3]='O'
-console.log(a[9][3]);
-let row = 2
-let col = 5
-a[row][col] = "O"
+let a = board(11)
 
-row++
-col++
-a[row][col] = "O"
+
 console.table(a);
+s = craeteSoldierX()
+console.log(s);
+
+// for (let j =0; j < boardSize;i++){
+// 	for (let u= 0; u<boardSize;u++){
+// 		a[j][u]= s[1].sign
+// 	}
+
+
+console.table(a)
+
+}
