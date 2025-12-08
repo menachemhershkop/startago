@@ -6,12 +6,10 @@ const board = [];
 for (let i = 0; i != boardSize; i++) {
 	board.push([]);
 	for (let j = 0; j != boardSize; j++) {
-		board[i].push(0);
+		board[i].push("-");
 	}
 }
 return board
 }
 
-let a = board(10)
-a[3][2]= 9
-console.table(a);
+
